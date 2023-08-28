@@ -86,13 +86,8 @@ body {
 }
 
 body {
+  font-family: Graebenbach-Regular;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -104,4 +99,36 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.carouselContainer{
+  top:0;
+  z-index: -1;
+}
+
+header{
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em;
+  font-size: 1.5em;
+  /* color: turquoise;
+  mix-blend-mode: difference; */
+}
+:root{
+  --color-highlight: rgb(228, 228, 228);
+}
+
+/* a[href="/about"]:hover {
+  text-shadow: 0 0 10px var(--color-highlight), 0 0 10px var(--color-highlight), 0 0 10px var(--color-highlight);
+}
+
+a[href="/"]:hover {
+  text-shadow: 0 0 10px var(--color-highlight), 0 0 10px var(--color-highlight), 0 0 10px var(--color-highlight);
+} */
+
+a:hover{
+  color: rgb(91, 201, 32);
+  mix-blend-mode: difference;
 }
