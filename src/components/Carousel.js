@@ -9,6 +9,8 @@ const Carousel = () => {
   const carouselRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImageSrc, setCurrentImageSrc] = useState('');
+  const [isFirstSlide, setIsFirstSlide] = useState(true);
+  const [isLastSlide, setIsLastSlide] = useState(true);  
 
   useEffect(() => {
     setCurrentImageSrc(projects[0].src);
