@@ -32,12 +32,14 @@
  width: 100vw;
   height: 100vh; 
   position: relative;
+  object-fit: cover;
 }
 
 .image {
   display: block;
   width: 100vw;
   height: 100vh;
+ 
 }
 
 .video {

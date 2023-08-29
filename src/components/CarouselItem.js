@@ -35,7 +35,7 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
         </video>
       ) : (
         <div className={`${styles.media} ${styles.image}`}>
-            <Image src={mainImageSrc} alt={alt} layout="fill" objectFit="cover" />
+            <Image src={mainImageSrc} alt={alt} fill objectFit="cover" />
         </div>
        //<img src={mainImageSrc} alt={alt} className={`${styles.media} ${styles.image}`} />
       )}
