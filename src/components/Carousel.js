@@ -94,6 +94,9 @@ const Carousel = () => {
          className={`${styles.expandButton} ${isExpanded ? styles.expanded : ''} ${styles.rotating}`}
         onClick={handleExpandButtonClick}
         style={isExpanded ? { backgroundImage: `url(${currentImageSrc})` } : {}}>  
+        <svg width="50" height="50" viewBox="0 0 65 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M32 0V67.5M65 33.5H0" />
+      </svg>
       </div>
     </div>
   );

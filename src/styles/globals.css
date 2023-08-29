@@ -113,8 +113,10 @@ header{
   justify-content: space-between;
   padding: 0.6em;
   font-size: 1.5em;
-  /* color: turquoise;
-  mix-blend-mode: difference; */
+  color: rgb(0, 255, 191);
+  mix-blend-mode: difference;
+  text-transform: uppercase;
+  padding-left: 2%; 
 }
 :root{
   --color-highlight: rgb(228, 228, 228);

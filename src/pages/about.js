@@ -2,9 +2,9 @@ import Header from '../components/Header';
 import Image from 'next/image';
 import { aboutContent, eventsContent } from '../../public/data/aboutContent';
 import Head from 'next/head';
+import styles from '../styles/about.module.css'; 
 
 const AboutPage = () => {
-
   return (
     <>
       <Head>
@@ -31,43 +31,50 @@ const AboutPage = () => {
         <meta name="robots" content="all" />
         <link rel="canonical" href="https://eddarabold.com/about" />
       </Head>
-
+      
 
       <Header />
-    
 
-      <main style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', padding: '1em',marginTop:'5em', justifyContent:'center'}}>
+      <main className={styles.mainContainer}>
+        <div className={styles.imageContainer}>
+          <Image
+            priority={true}
+            src="/images/portrait-edda1.jpg"
+            alt="portrait Rabold"
+            width={300}
+            height={400}
+          />
+        </div>
 
-      <div style={{ margin: '1em' }}>
-          <Image priority={true} src="/images/portrait-edda1.jpg" alt="portrait Rabold" width={300} height={400} />
-      </div>
-
-      <div style={{ margin: '1em', width: '50%' }}>
+        <div className={styles.aboutContent}>
           {aboutContent.map((sectionData, index) => (
-            <div key={index} style={{ paddingBottom: '2em'}}>
-              {/* <h2>{sectionData.section}</h2> */}
+            <div key={index} className={styles.aboutSection}>
               {sectionData.content.map((paragraph, index) => (
-                <p key={index} style={{ fontSize: '1em' }}>
+                <p key={index} className={styles.paragraph}>
                   {paragraph}
                 </p>
               ))}
               {sectionData.mail && (
-                <p style={{ paddingBottom: '2em', fontSize: '1em', color: '#7a0eb0', textDecoration: 'underline', cursor: 'pointer' }}>
-                  <a href={`mailto:${sectionData.mail}`} style={{ color:"(91, 201, 32)", textDecoration: 'underline' }}>
+                <p className={styles.mail}>
+                  <a
+                    href={`mailto:${sectionData.mail}`}
+                    className={styles.mailLink}
+                  >
                     {sectionData.mail}
                   </a>
                 </p>
               )}
             </div>
           ))}
- 
+
           {eventsContent.map((entry, index) => (
-        <div key={index} style={{ margin: '0 0 1em 0',width: '90%' }}>
-          <p>{entry.date} – {entry.event}</p>
-          <p>{entry.details}</p>
+            <div key={index} className={styles.event}>
+              <p className={styles.eventDate}>{entry.date}</p>
+              <p className={styles.eventDetails}>{entry.event}</p>
+              <p className={styles.eventDetails}>{entry.details}</p>
+            </div>
+          ))}
         </div>
-        ))}    
-      </div>   
       </main>
     </>
   );
