@@ -131,6 +131,6 @@ a[href="/"]:hover {
 } */
 
 a:hover{
-  color: rgb(91, 201, 32);
+  color: #7a0eb0;
   mix-blend-mode: difference;
 }
