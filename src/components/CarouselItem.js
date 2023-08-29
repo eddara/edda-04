@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { projects } from "../../public/data/projects";
 import styles from '../styles/carousel.module.css';
+import Image from 'next/image';
 
 const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentImageSrc }) => {
   const [activeRelatedIndex, setActiveRelatedIndex] = useState(0);
@@ -18,7 +19,7 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
         const interval = setInterval(changeActiveRelatedImage, 3000); 
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }
-  }, [project]);
+  }, [project,changeActiveRelatedImage]);
 
   // Use the activeRelatedIndex to determine the main image source when expanded
   const mainImageSrc = isExpanded && project && project.related && project.related.length > 0
@@ -33,7 +34,10 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
           <source src={src} type="video/mp4" />
         </video>
       ) : (
-        <img src={mainImageSrc} alt={alt} className={`${styles.media} ${styles.image}`} />
+        <div className={`${styles.media} ${styles.image}`}>
+            <Image src={mainImageSrc} alt={alt} layout="fill" objectFit="cover" />
+        </div>
+       //<img src={mainImageSrc} alt={alt} className={`${styles.media} ${styles.image}`} />
       )}
 
       <div className={styles.wrapper}>

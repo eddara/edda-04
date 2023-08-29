@@ -10,29 +10,31 @@ const Carousel = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImageSrc, setCurrentImageSrc] = useState('');
 
-  const handleCarouselScroll = () => {
-    const { scrollLeft } = carouselRef.current;
-    const containerWidth = carouselRef.current.clientWidth;
-    const index = Math.floor(scrollLeft / containerWidth);
-    if (index < projects.length) {
-      setCurrentImageSrc(projects[index].src);
-    }
-  };
-
   useEffect(() => {
-
     setCurrentImageSrc(projects[0].src);
-    
-    // Check if carouselRef.current exists before adding the event listener
-    if (carouselRef.current) {
-      carouselRef.current.addEventListener('scroll', handleCarouselScroll);
+
+    // Copy the ref value to a variable
+    const currentCarouselRef = carouselRef.current;
+
+    const handleCarouselScroll = () => {
+      const { scrollLeft } = currentCarouselRef;
+      const containerWidth = currentCarouselRef.clientWidth;
+      const index = Math.floor(scrollLeft / containerWidth);
+      if (index < projects.length) {
+        setCurrentImageSrc(projects[index].src);
+      }
+    };
+
+    // Check if currentCarouselRef exists before adding the event listener
+    if (currentCarouselRef) {
+      currentCarouselRef.addEventListener('scroll', handleCarouselScroll);
     }
 
     // Clean up the event listener when the component unmounts
     return () => {
-      // Check if carouselRef.current exists before removing the event listener
-      if (carouselRef.current) {
-        carouselRef.current.removeEventListener('scroll', handleCarouselScroll);
+      // Check if currentCarouselRef exists before removing the event listener
+      if (currentCarouselRef) {
+        currentCarouselRef.removeEventListener('scroll', handleCarouselScroll);
       }
     };
   }, []);

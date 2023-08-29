@@ -24,23 +24,25 @@
 }
 
 .projectItem{
-
   height: 100vh;
   width: 100vw;
 }
 
 .media {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+ width: 100vw;
+  height: 100vh; 
+  position: relative;
 }
 
 .image {
   display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 .video {
   display: block;
+  object-fit: cover;
 }
 
 .prevButton,
