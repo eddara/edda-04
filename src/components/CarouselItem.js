@@ -3,6 +3,9 @@ import { projects } from "../../public/data/projects";
 import styles from '../styles/carousel.module.css';
 import Image from 'next/image';
 
+
+// _____ MY CODE 
+
 const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentImageSrc }) => {
   const [activeRelatedIndex, setActiveRelatedIndex] = useState(0);
 
@@ -29,8 +32,8 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
   return (
     <div key={src} className={styles.carouselItem}>
       <div className={styles.title}>{title}</div>
-      {isVideo ? (
-        <video autoPlay autoplay muted loop playsinline className={`${styles.media} ${styles.video}`}>
+      {isVideo ? (  
+        <video autoplay loop muted playsinline className={`${styles.media} ${styles.video}`}>
           <source src={src} type="video/mp4" />
         </video>
       ) : (
