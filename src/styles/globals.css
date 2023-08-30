@@ -123,13 +123,15 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 0.2em;
-  font-size: 3.3vmax;
+  font-size: 3vmax;
   /* font-size: 1.7em; */
   color: rgb(0, 255, 191);
   mix-blend-mode: difference;
   text-transform: uppercase;
   padding-left: 2%; 
+  transform: translate3d(0,0,0); 
 }
+
 :root{
   --color-highlight: rgb(228, 228, 228);
 }

@@ -2,14 +2,14 @@ export const aboutContent = [
     {
       section: "About Me",
       content: [
-        "My name is Edda Rabold, and I'm a designer located in Marseille who specializes in digital production technologies and unique design processes. I graduated from Burg Giebichenstein in Halle with a degree in Industrial Design and studied at the Art and Design Academy Bezalel in Jerusalem.",
-        "I currently work at AATB and collaborating with a variety of artists. My particular interest is in using modern technologies to push design boundaries.",
+        "My name is Edda Rabold, and I'm a designer located in Marseille who specializes in digital production technologies and unique design processes. I graduated from Burg Giebichenstein in Halle (Germany) with a degree in Industrial Design and studied at the Art and Design Academy Bezalel in Jerusalem (Israel).",
+        "My particular interest is in using modern technologies to push design boundaries.",
       ]
     },
     {
       section: "Contact",
       content: [
-        "I am open for new ideas and collaborations - so write me a message:",
+        "I am open for new ideas and collaborations - write me a message:",
       ],
       mail:"hi@eddarabold.com",
     }

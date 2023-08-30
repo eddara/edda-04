@@ -30,7 +30,7 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
     <div key={src} className={styles.carouselItem}>
       <div className={styles.title}>{title}</div>
       {isVideo ? (
-        <video autoPlay muted loop playsinline className={`${styles.media} ${styles.video}`}>
+        <video autoPlay autoplay muted loop playsinline className={`${styles.media} ${styles.video}`}>
           <source src={src} type="video/mp4" />
         </video>
       ) : (
