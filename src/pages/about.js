@@ -10,6 +10,7 @@ const AboutPage = () => {
       <Head>
         <title>About Me - Edda Rabold</title>
         <meta name="description" content="Learn about Edda Rabold and her design. Contact for collaborations." />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         
         {/* Open Graph tags for social media sharing */}
         <meta property="og:title" content="About Me - Edda Rabold" />

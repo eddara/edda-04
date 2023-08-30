@@ -9,6 +9,7 @@ export default function Home() {
      <Head>
         <title>Edda Rabold - Designer</title>
         <meta name="description" content="Welcome to the portfolio of Edda Rabold, a designer specializing in digital production and unique design processes." />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         
         {/* Open Graph tags for social media sharing */}
         <meta property="og:title" content="Edda Rabold - Designer" />

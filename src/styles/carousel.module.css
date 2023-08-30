@@ -2,7 +2,7 @@
 .carouselContainer {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   top:0;
   z-index: -1;
@@ -24,13 +24,13 @@
 }
 
 .projectItem{
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
 }
 
 .media {
  width: 100vw;
-  height: 100vh; 
+  height: 100lvh; 
   position: relative;
   object-fit: cover;
 }
@@ -38,7 +38,7 @@
 .image {
   display: block;
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
  
 }
 
@@ -57,6 +57,19 @@
   border: none;
   color: #fff;
   cursor: pointer;
+  animation: blink 5s linear infinite;
+}
+
+@keyframes blink{
+  25%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0.5;
+  }
 }
 
 .prevButton {
@@ -66,11 +79,10 @@
   right: 10px;
 }
 
-.prevButton:hover svg path ,
+/* .prevButton:hover svg path ,
 .nextButton:hover svg path  {
   fill: rgb(91, 201, 32);
-  /* mix-blend-mode: difference;  */
-}
+} */
 
 .wrapper {
 bottom: 0;
@@ -83,12 +95,15 @@ position: absolute;
  position: absolute;
  bottom: 0;
  font-family: Graebenbach-RegularItalic;
- font-size: 1.5em;
+ /* font-size: 1.5em; */
  color: rgb(91, 201, 32);
  mix-blend-mode: difference;
  text-transform: uppercase;
  padding-left: 2%; 
  z-index: 20;
+ font-size: 3.3vmax;
+ padding-bottom: 0.3em;
+ width: 90%;
 }
 
 .expandButton{
@@ -114,15 +129,16 @@ position: absolute;
   stroke-width: 3;
 
 }
+/* 
 .expandButton:hover {
   transform: rotate(90deg);
 }
 .expandButton:hover svg{
   transform: rotate(0deg);
   stroke: #7a0eb0;
-}
+} */
 .expandButton.expanded svg {
-  transform: rotate(45deg);
+ transform: rotate(45deg);
 }
 
 .expandButton.expanded {
@@ -134,11 +150,9 @@ position: absolute;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.25);
 }
 
-.expandButton:hover{
+/* .expandButton:hover{
   border:1px solid #7a0eb0;
-  /* color: rgb(47, 0, 255);
-  mix-blend-mode: difference; */
-}
+} */
 
 .expandedContent {
   background-color: rgba(255, 255, 255, 0.8);
@@ -178,9 +192,32 @@ position: absolute;
 }
 
 @media only screen and (min-width: 900px) {
-  .title{
+  /* .title{
     font-size: 2em;
+  } */
+
+  .prevButton , .nextButton{
+   animation: none;
   }
+  .prevButton:hover svg path ,
+  .nextButton:hover svg path  {
+    fill: rgb(91, 201, 32);
+    /* mix-blend-mode: difference;  */
+  }
+  .expandButton:hover {
+    transform: rotate(90deg);
+  }
+  .expandButton:hover svg{
+    transform: rotate(0deg);
+    stroke: #7a0eb0;
+  }
+  .expandButton.expanded svg {
+   transform: rotate(45deg);
+  }
+  .expandButton:hover{
+    border:1px solid #7a0eb0;
+  }
+  
   .expandedContent {
     padding-top: 4rem;
     flex-direction: row-reverse;

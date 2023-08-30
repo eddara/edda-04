@@ -11,7 +11,7 @@ export const aboutContent = [
       content: [
         "I am open for new ideas and collaborations - so write me a message:",
       ],
-      mail:"mail@eddarabold.com",
+      mail:"hi@eddarabold.com",
     }
   ];
   
