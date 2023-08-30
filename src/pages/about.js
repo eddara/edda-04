@@ -65,6 +65,18 @@ const AboutPage = () => {
                   </a>
                 </p>
               )}
+               {sectionData.text && (
+                <div className={styles.paragraph}> {sectionData.text}
+                  <p className={styles.mail} > 
+                     <a target="_blank"
+                    href={`${sectionData.instagram}`}
+                    className={styles.mailLink}
+                  >
+                     Instagram
+                  </a>
+                  </p>
+                </div>
+              )}
             </div>
           ))}
 

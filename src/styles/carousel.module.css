@@ -30,7 +30,7 @@
 
 .media {
  width: 100vw;
-  height: 100lvh; 
+  height: 100dvh; 
   position: relative;
   object-fit: cover;
 }
@@ -38,7 +38,7 @@
 .image {
   display: block;
   width: 100vw;
-  height: 100lvh;
+  height: 100dvh;
  
 }
 
@@ -86,7 +86,7 @@
 
 .wrapper {
 bottom: 0;
-height: 100vh;
+height: 100dvh;
 width: 100vw;
 position: absolute;
 }
