@@ -98,7 +98,8 @@ body {
 
 body {
   font-family: Graebenbach-Regular;
-  color: #fff;
+  color: #0000;
+  background-color: #fff;
 }
 
 a {
@@ -106,11 +107,12 @@ a {
   text-decoration: none;
 }
 
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 .carouselContainer{
   top:0;

@@ -76,7 +76,7 @@ export const projects = [
         title: "Verkörperung – an examination of our own physicality on the internet ",
         text:"The project Verkörperung intervenes the online browsing experience and extends it by components, which enable abody awareness controlling. The Chrome extension recognizes real movements and allows the user to reflect their own relationship between themselves and the digital space. Technology in classical sense often represents the feeling for one‘s own physicality recede into the background. The controlling is reduced to the hands and at the same time the user receives little haptic feedback when dealing with digital media.",
         detail:"chrome extension and website 2019/20, Prof. Matthias Görlich, Peter Hermans, collaberating with: Arne Flach, Wanda Silberhorn nominated for Burg Giebichenstein Designpreis, best experiment, exhibition at Kunststiftung Sachsen Anhalt",
-        src: '/videos/PopUpVerkörperung-klein.mp4', 
+        src: '/videos/PopUpVerkoerperung-klein.mp4', 
         alt: 'Extension Pop Up Window is asking Questions',
         isVideo: true
     },
