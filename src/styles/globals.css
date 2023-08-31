@@ -98,7 +98,7 @@ body {
 
 body {
   font-family: Graebenbach-Regular;
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
 }
 
 a {
