@@ -5,12 +5,15 @@ import Image from 'next/image';
 import { projects } from '../../public/data/projects';
 import CarouselItem from './CarouselItem';
 
+// import {Cloudinary} from "@cloudinary/url-gen";
+
+
+
 const Carousel = () => {
   const carouselRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImageSrc, setCurrentImageSrc] = useState('');
-  const [isFirstSlide, setIsFirstSlide] = useState(true);
-  const [isLastSlide, setIsLastSlide] = useState(true);  
+  // const cld = new Cloudinary({cloud: {cloudName: 'dsd3eyrgl'}});
 
   useEffect(() => {
     setCurrentImageSrc(projects[0].src);

@@ -3,9 +3,6 @@ import { projects } from "../../public/data/projects";
 import styles from '../styles/carousel.module.css';
 import Image from 'next/image';
 
-
-// _____ MY CODE 
-
 const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentImageSrc }) => {
   const [activeRelatedIndex, setActiveRelatedIndex] = useState(0);
 
@@ -28,20 +25,17 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
   const mainImageSrc = isExpanded && project && project.related && project.related.length > 0
     ? project.related[activeRelatedIndex].src
     : currentImageSrc;
-
+  
   return (
     <div key={src} className={styles.carouselItem}>
       <div className={styles.title}>{title}</div>
       {isVideo ? (  
-        <video autoPlay loop muted playsInline className={`${styles.media} ${styles.video}`}>
-          <source src={src} type="video/mp4" />
+        <video autoPlay loop muted playsInline className={`${styles.media} ${styles.video}`} src={src} type="video/mp4" >
+          {/* <source src={src} type="video/mp4" /> */}
         </video>
       ) : (
         <div className={`${styles.media} ${styles.image}`}>
-            <Image 
-            // className="transition-opacity opacity- duration- [2s]"
-            // onLoading complete={(image) => image.ELassList. remove ("opacity-0")}
-            src={mainImageSrc} alt={alt} fill style={{objectFit:"cover"}} />
+            <Image src={mainImageSrc} alt={alt} fill style={{objectFit:"cover"}} />
         </div>
        //<img src={mainImageSrc} alt={alt} className={`${styles.media} ${styles.image}`} />
       )}
