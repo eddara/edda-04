@@ -77,11 +77,13 @@
   font-family: Graebenbach-Regular;
   src: url(../../public/fonts/Graebenbach-Regular.woff) format('woff'),
        url(../../public/fonts/Graebenbach-Regular.ttf) format('truetype');
+       font-display: swap;
 }
 @font-face {
   font-family: Graebenbach-RegularItalic;
   src: url(../../public/fonts/Graebenbach-RegularItalic.woff) format('woff'),
        url(../../public/fonts/Graebenbach-RegularItalic.ttf) format('truetype');
+       font-display: swap;
 }
 
 * {

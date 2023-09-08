@@ -9,12 +9,12 @@ const AboutPage = () => {
     <>
       <Head>
         <title>About Me - Edda Rabold</title>
-        <meta name="description" content="Learn about Edda Rabold and her design. Contact for collaborations." />
+        <meta name="description" content="This is Edda Rabold. Contact for collaborations." />
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         
         {/* Open Graph tags for social media sharing */}
         <meta property="og:title" content="About Me - Edda Rabold" />
-        <meta property="og:description" content="Learn about Edda Rabold and her design. Contact for collaborations." />
+        <meta property="og:description" content="This is Edda Rabold. Contact for collaborations." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:url" content="https://www.eddarabold.com/about" />
         <meta property="og:type" content="website" />
@@ -22,13 +22,13 @@ const AboutPage = () => {
         {/* Twitter Card tags for Twitter sharing */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Me - Edda Rabold" />
-        <meta name="twitter:description" content="Learn about Edda Rabold and her design. Contact for collaborations." />
+        <meta name="twitter:description" content="This is Edda Rabold. Contact for collaborations." />
         <meta name="twitter:image" content="/images/twitter-image.jpg" />
         <meta name="twitter:url" content="https://www.eddarabold.com/about" />
 
         {/* Other meta tags */}
         <meta name="author" content="Edda Rabold" />
-        <meta name="keywords" content="design, digital production, collaboration, technology" />
+        <meta name="keywords" content="design, digital fabrication, collaboration, technology, Marseille, Berlin, robotics" />
         <meta name="robots" content="all" />
         <link rel="canonical" href="https://eddarabold.com/about" />
       </Head>
@@ -40,9 +40,9 @@ const AboutPage = () => {
         <div className={styles.imageContainer}>
           <Image
             priority={true}
-            src="/images/portrait-edda1.jpg"
+            src="/images/edda-scan.png"
             alt="portrait Rabold"
-            width={300}
+            width={335}
             height={400}
           />
         </div>

@@ -22,7 +22,7 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
         const interval = setInterval(changeActiveRelatedImage, 3000); 
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }
-  }, [project,changeActiveRelatedImage]);
+  }, [project, changeActiveRelatedImage]);
 
   // Use the activeRelatedIndex to determine the main image source when expanded
   const mainImageSrc = isExpanded && project && project.related && project.related.length > 0
@@ -38,7 +38,10 @@ const CarouselItem = ({ src, alt, isVideo, title, project, isExpanded, currentIm
         </video>
       ) : (
         <div className={`${styles.media} ${styles.image}`}>
-            <Image src={mainImageSrc} alt={alt} fill style={{objectFit:"cover"}} />
+            <Image 
+            // className="transition-opacity opacity- duration- [2s]"
+            // onLoading complete={(image) => image.ELassList. remove ("opacity-0")}
+            src={mainImageSrc} alt={alt} fill style={{objectFit:"cover"}} />
         </div>
        //<img src={mainImageSrc} alt={alt} className={`${styles.media} ${styles.image}`} />
       )}
