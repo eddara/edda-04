@@ -19,6 +19,25 @@ export const projects = [
         isVideo: true,
     },
     { 
+        title: "I can't weld",
+        text: "As part of the residency at La Réserve des Arts, I am questioning the creative units of aluminium. With the use of recycled Aluminium and a melting kiln, I experiment with my own modulat casting techniques: partial casting, additive casting and casting to assembly. The approach highlights the traces of the process, the imprints left by the liquid metal, highlighting the contrasts between artisanal and industrial pieces. The exhibition shows a stool, a table and a chandelier, each bearing witness to this hybrid exploration of recycling, craft and cast aluminium",
+        detail:"Artist in Residence at La reserve des Arts, Marseille",
+        src: '/images/tisch-rabold.jpeg', 
+        alt: 'Aluminium objects, 2024',
+        related: [
+            { src: '/images/hocker-rabold.jpg', alt: 'aluminium stool, molten grid' },
+            { src: '/images/tisch-detail-rabold.jpeg', alt: 'aluminium table, molten legs' },
+          ],
+    },
+     { 
+        title: "I can't weld",
+        text: "As part of the residency at La Réserve des Arts, I am questioning the creative units of aluminium. With the use of recycled Aluminium and a melting kiln, I experiment with my own modulat casting techniques: partial casting, additive casting and casting to assembly. The approach highlights the traces of the process, the imprints left by the liquid metal, highlighting the contrasts between artisanal and industrial pieces. The exhibition shows a stool, a table and a chandelier, each bearing witness to this hybrid exploration of recycling, craft and cast aluminium",
+        detail:"Artist in Residence at La reserve des Arts, Marseille",
+        src: '/videos/Alu-web.mp4', 
+        alt: 'Aluminium objects, 2024',
+        isVideo: true,
+    },
+    { 
         title: "Wool Tools – Robotic Felting – AATB X Atelier LUMA",
         text: "Wool Tools is an ongoing research project by Atelier LUMA in collaboration with AATB. It intends to examine the needle felting technology by combining it with the benefits of robotic manufacturing. What impact may new technologies have on how we process wool? The project investigates new possibilities for the treatment and aesthetics of felted wool through the creation of new hardware and software.",
         detail:"AATB: Artistic and technical direction: Andrea Anner, Thibault Brevet Project lead: Edda Rabold Software development: Samuel Antol Hardware development: Elena Reggio, Severin Göbel-Groß Atelier LUMA: Artistic direction: Jan Boelen Exhibition Coordinator: Estelle Mury Scenography: Elizabeth Guyon Designers: Sacha Parent, Carolin Schelkle Textile designers: Margot Graziani, Pauline Plouviez",
