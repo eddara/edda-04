@@ -3,10 +3,10 @@ export const projects = [
         title: "Haute Viscosité",
         text: "Translating digital fluidity into molten glass. Each flame-worked piece undergoes physical constraints similar to those of digital tools: it is inflated, curved, assembled, and interrupted. The result is a series of pieces in which process and form are inseparable, each object bearing the traces of its manufacturing process.",
         detail:"Art-O-Rama, Prix région sud design, Marseille",
-        src: '/images/IMG_7697-insta.jpg', 
+        src: '/images/IMG_7597-insta.jpg', 
         alt: 'glas objects, 2025',
         related: [
-            { src: '/images/IMG_7517-insta.jpg', alt: 'exhibition Art-O-Rama' },
+            { src: '/images/IMG_7617-insta.jpg', alt: 'exhibition Art-O-Rama' },
           ],
     },
      { 
