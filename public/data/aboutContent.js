@@ -21,7 +21,7 @@ export const aboutContent = [
 
     {
       date: "2025 august",
-      event: "Art-O-Rama, nomination Prix region sud design",
+      event: "Art-O-Rama, Recipient of the Prix région sud design",
     },
     {
       date: "2025 May",
@@ -30,7 +30,7 @@ export const aboutContent = [
     },
     {
       date: "2024 june - dezember",
-      event: "Residency, Reverves des arts, Marseille",
+      event: "Residency, Reserves des arts, Marseille",
       details: "Realisation of the project I can't weld"
     },
     {
