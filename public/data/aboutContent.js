@@ -18,6 +18,10 @@ export const aboutContent = [
   ];
   
   export const eventsContent = [
+         {
+      date: "2026 august",
+      event: "Art-O-Rama, Guest Designer Showroom Design, collaboration Maud Brunstein",
+    },
 
     {
       date: "2025 august",
