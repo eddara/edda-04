@@ -1,4 +1,15 @@
 export const projects = [
+             { 
+        title: "Liminal X Maud Brunstein",
+        text:"Edda Rabold invite Maud Brunstein, designeuse textile, à imaginer ensemble une collection de lampes.Deux univers se rencontrent: celui d'Edda, qui travaille à la croisée de la fabrication artisanale et des outils numériques, entre précision digitale et imprévisibilité physique des matières et celui de Maud, qui explore, dans ses recherche de matière en tricot, les interactions colorées et les phénomènes optiques. De cette rencontre naît « Liminal » : des éléments en maille aux couleurs changeantes se combinent à des composants en aluminium coulé laissant voir, dans la matière même, les traces de leur fabrication. La maille se forme, se déforme, et interagit avec la lumière ; le métal, lui, la retient et la structure. ",
+        detail:"Liminal X Maud Brunstein, lampe 40x18cm/140x20cm/180x22cm, Aluminium, LED, coton, nylon Photos: Lise Lunel",
+        src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-01.jpg', 
+        alt: 'Liminal, 2026',
+        related: [
+            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-02', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
+            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-03', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
+          ],
+    },
             { 
         title: "Haute Viscosité",
         text: "Translating digital fluidity into molten glass. Each flame-worked piece undergoes physical constraints similar to those of digital tools: it is inflated, curved, assembled, and interrupted. The result is a series of pieces in which process and form are inseparable, each object bearing the traces of its manufacturing process.",
