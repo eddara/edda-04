@@ -6,8 +6,8 @@ export const projects = [
         src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-01.jpg', 
         alt: 'Liminal, 2026',
         related: [
-            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-02', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
-            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-03', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
+            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-02.jpg', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
+            { src: '/images/Liminal-Brunstein-Rabold-photoLiseLunel-03.jpg', alt: 'Liminal,2026,Lampe - Brunstein, Rabold' },
           ],
     },
             { 
